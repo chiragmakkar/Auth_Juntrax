@@ -38,7 +38,6 @@ const geo = (req, res) => {
 
         if (num <= limit && ((Date.now() / 1000) - (time / 1000) <= 3600)) {
             request(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${req.body.lat},${req.body.lng}&key=${key}`, (err, resp, body) => {
-                console.log(JSON.parse(body).results[0].formatted_address)
                 res.json({
                     "latitude": req.body.lat,
                     "longitude": req.body.lng,
@@ -63,7 +62,6 @@ const geo = (req, res) => {
     requests.save((err, data) => {
         if (err) console.log(err)
         else {
-            console.log(data)
         }
     })
 

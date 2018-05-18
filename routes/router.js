@@ -18,7 +18,7 @@ const auth = require('../modules/protect')
 
 router.post('/log', auth, require('../modules/log'))
 
-router.get('/logs', auth, require('../modules/logs'))
+router.post('/logs', auth, require('../modules/logs'))
 
 router.post('/geo', require('../modules/geo'))
 

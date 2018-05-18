@@ -12,14 +12,12 @@ const logs = (req, res) => {
     requests.save((err, data) => {
         if (err) console.log(err)
         else {
-            console.log(data)
         }
     })
 
     requestLog.find({}, (err, reqs) => {
         if (err) console.log(err)
         else {
-            console.log(reqs)
             res.json(reqs)
         }
     })

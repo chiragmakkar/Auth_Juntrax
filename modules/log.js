@@ -13,7 +13,7 @@ const log = (req, res) => {
         requests.save((err, data) => {
             if (err) console.log(err)
             else {
-                console.log(data)
+                // console.log(data)
             }
         })
 
@@ -25,7 +25,7 @@ const log = (req, res) => {
         }, (err, reqs) => {
             if (err) console.log(err)
             else {
-                console.log(reqs)
+                // console.log(reqs)
                 res.json(reqs)
             }
         })
