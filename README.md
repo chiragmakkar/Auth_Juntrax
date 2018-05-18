@@ -30,9 +30,9 @@ Protocol | Route Address | Input Parameters | Output JSON Expectation
 --- | --- | --- | ---
 GET | / | None | Welcome Message
 POST | /login | username, password | Success Message -> Token
-POST | /log | token, timestamp1, timestamp2 | Array of logs(in JSON)
-POST | /logs | token | Array of all logs(in JSON)
+POST | /log (secure) | token, timestamp1, timestamp2 | Array of logs(in JSON)
+POST | /logs (secure) | token | Array of all logs(in JSON)
 POST | /geo | lat, lng | Address(in JSON)
-POST | /geo | token, limit | Success/Error Message
-POST | /status | token | Success/Error Message
-POST | /uptime | token | Uptime(in seconds)
+POST | /geo (secure) | token, limit | Success/Error Message
+POST | /status (secure)| token | Success/Error Message
+POST | /uptime (secure) | token | Uptime(in seconds)
