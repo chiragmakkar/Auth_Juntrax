@@ -1,10 +1,12 @@
 # Auth_Juntrax
-Juntrax Backend Assignment
+> URL - https://juntrax.herokuapp.com/
 
 ## Introduction
 > This is the backend server setup for the assignment by JUNTRAX Solutions.
 
 > Technologies used : Node & MongoDB
+
+> Deployment : Heroku || Git
 
 ## Installation and Running
 
@@ -21,10 +23,10 @@ Juntrax Backend Assignment
 Protocol | Route Address | Input Parameters | Output JSON Expectation
 --- | --- | --- | ---
 GET | / | None | Welcome Message
-POST | /auth/register | fullName, userName, email, phone, passEnter, passConfirm | Success/Error Message
-GET | /auth/verify/:username/:code | None | Success/Error Message
-POST | /auth/verify/phone/:username | otp | Success/Error Message
-POST | /auth/login | username, password | Success Message -> Token or Error Message
-GET | /auth/logout | token (Header: x-access-token) or Params | Success/Error Message
-POST | /auth/change-password | token, oldPassword, newPassword | Success/Error Message
-GET | /cron?options | None | Success Message
+POST | /login | username, password | Success Message -> Token
+POST | /log | token, timestamp1, timestamp2 | Array of logs(in JSON)
+POST | /logs | token | Array of logs(in JSON)
+POST | /geo | lat, lng | Address(in JSON)
+POST | /geo | token, limit | Success/Error Message
+POST | /status | token | Success/Error Message
+POST | /uptime | token | Uptime(in seconds)
