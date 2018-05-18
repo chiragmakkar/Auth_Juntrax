@@ -7,3 +7,5 @@ const server = http.createServer(app)
 server.listen(port, () => {
     console.log(`Server active on port ${port}`)
 })
+
+module.exports = server
