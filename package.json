@@ -1,0 +1,19 @@
+{
+  "name": "auth_juntrax",
+  "version": "1.0.0",
+  "description": "Juntrax Backend Assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chiragmakkar/Auth_Juntrax.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chiragmakkar/Auth_Juntrax/issues"
+  },
+  "homepage": "https://github.com/chiragmakkar/Auth_Juntrax#readme"
+}
