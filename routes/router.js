@@ -10,4 +10,15 @@ router.get('/', (req, res) => {
     res.json({"message" : "Hi! You know for rest :)"})
 })
 
+router.post('/login', require('../modules/login'))
+
+const auth = require('../modules/protect')
+
+router.post('/status', auth, (req, res) => {
+    res.json({
+        "message": "You're logged in!",
+        "data": req.decoded
+    })
+})
+
 module.exports = router
