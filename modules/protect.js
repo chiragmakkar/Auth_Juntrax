@@ -1,4 +1,3 @@
-const bcrypt = require('bcrypt');
 const mongoose = require('mongoose')
 const jwt = require('jsonwebtoken')
 
@@ -9,14 +8,14 @@ const auth = (req, res, next) => {
 	if (token) {
 		jwt.verify(token, "139.A.Z.X", (err1, decoded) => {
 
-			req.decoded = decoded;
-			next();
-		});
+			req.decoded = decoded
+			next()
+		})
 	} else {
 		return res.status(403).send({
 			success: false,
 			message: 'No token provided.'
-		});
+		})
 	}
 }
 
