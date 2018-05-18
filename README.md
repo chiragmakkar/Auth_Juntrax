@@ -8,6 +8,8 @@
 
 > Deployment : Heroku || Git
 
+> Testing : Mocha & Chai
+
 ## Installation and Running
 
 > npm install
@@ -17,6 +19,10 @@
 * Optional Setup : Mention custom port
 
 > npm start custom_port
+
+* For Testing
+
+> npm test 
 
 ## Routes
 
