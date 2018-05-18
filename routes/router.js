@@ -20,6 +20,8 @@ router.post('/log', require('../modules/log'))
 
 router.get('/logs', require('../modules/logs'))
 
+router.post('/geo', require('../modules/geo'))
+
 router.post('/status', auth, require('../modules/status'))
 
 router.post('/uptime', auth, require('../modules/uptime'))
